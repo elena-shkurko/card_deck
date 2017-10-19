@@ -1,0 +1,133 @@
+body{
+ font-family: "Arial", sans-serif;
+ background-color: #fff;
+ padding: 20px;
+}
+
+.ba-card-container {
+  cursor: pointer;
+  height: 267px;
+  perspective: 600;
+  position: relative;
+  width: 170px;
+  margin: 5px;
+  float: left;
+}
+.ba-card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.ba-card:hover {
+  transform: rotateY(180deg);
+}
+.ba-card .ba-side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.ba-card .ba-back {
+  background: #fff;
+  /*color: #0087cc;
+  line-height: 150px;
+  text-align: center;*/
+  transform: rotateY(180deg);
+}
+
+.ba-face {
+	height: 100%;
+	width: 100%;
+	font-weight: 700;
+	font-size: 20px;
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 6px;
+	position: relative;
+}
+
+.ba-face__up {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.ba-face__down {
+	transform: rotate(180deg);
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+.ba-name {
+	margin: 0;
+	padding-top: 5px;
+	padding-left: 10px;
+	
+}
+
+.ba-name--red {
+	color: #d80816;
+}
+
+.ba-name--black {
+	color: #000;
+}
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
